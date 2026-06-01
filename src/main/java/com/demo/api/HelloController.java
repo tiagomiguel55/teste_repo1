@@ -25,11 +25,6 @@ public class HelloController {
         return items;
     }
 
-    @GetMapping("/items/count")
-    public int getItemCount() {
-        return items.size();
-    }
-
     @PostMapping("/items")
     public String addItem(@RequestBody String item) {
         items.add(item);
